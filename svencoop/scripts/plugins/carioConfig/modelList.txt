@@ -1,0 +1,5 @@
+#Add the folder names of the models you find in svencoop/models/player/foldername
+#---------------------------------------------------------
+#Example: svencoop/models/player/lucario_hd/lucario_hd.mdl
+#Put "lucario_hd" in this file
+#---------------------------------------------------------
