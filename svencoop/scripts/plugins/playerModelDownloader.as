@@ -1,3 +1,5 @@
+//Please check the svencoop/scripts/plugin/carioConfig/modelList.txt for instructions
+
 void PluginInit() {
 
 	g_Module.ScriptInfo.SetAuthor("Dhalucario");
