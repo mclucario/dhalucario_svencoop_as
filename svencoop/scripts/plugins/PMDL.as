@@ -1,18 +1,14 @@
-//Please check the svencoop/scripts/plugin/carioConfig/modelList.txt for instructions
+//Please check the svencoop/scripts/plugin/pmdl/modelList.txt for instructions
 
 void PluginInit() {
-
 	g_Module.ScriptInfo.SetAuthor("Dhalucario");
 	g_Module.ScriptInfo.SetContactInfo("Telegram: @yesthisiscario");
-
 }
 
 void MapInit() {
-
-	File@ modelList = g_FileSystem.OpenFile("scripts/plugins/carioConfig/modelList.txt", OpenFile::READ);
+	File@ modelList = g_FileSystem.OpenFile("scripts/plugins/pmdl/modelList.txt", OpenFile::READ);
 	
 	if(modelList !is null && modelList.IsOpen()) {
-
 		while (!modelList.EOFReached()) {
 
 			string txtLine = "";
@@ -24,7 +20,6 @@ void MapInit() {
 			g_Game.PrecacheModel("models/player/" + txtLine + "/" + txtLine + ".mdl");
 
 		}
-
 	}
 	
 	modelList.Close();
