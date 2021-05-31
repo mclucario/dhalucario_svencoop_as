@@ -18,7 +18,7 @@ HookReturnCode PlayerPreThink( CBasePlayer@ pPlayer, uint& out uiFlags )
 		if( (flags & FL_ONGROUND) == 0 )
 			return HOOK_CONTINUE;
 			
-		if (!pPlayer.isAlive())
+		if (!pPlayer.IsAlive())
 			return HOOK_CONTINUE;
 
 		// Code from: https://steamcommunity.com/groups/SvenCoop/discussions/0/359543542246728102/ by Nero
@@ -31,4 +31,4 @@ HookReturnCode PlayerPreThink( CBasePlayer@ pPlayer, uint& out uiFlags )
 	}
 
 	return HOOK_CONTINUE;
-} 
+}
